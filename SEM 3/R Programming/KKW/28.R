@@ -1,0 +1,6 @@
+m = matrix(1:9, nrow=3)
+myList = as.list(m)
+listData = unlist(myList)
+sortData = sort(listData)
+sortList = as.list(sortData)
+print(sortList)

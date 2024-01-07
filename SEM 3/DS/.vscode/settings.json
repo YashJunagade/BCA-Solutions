@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "conio.h": "c",
+    "type_traits": "c",
+    "stdlib.h": "c"
+  }
+}
