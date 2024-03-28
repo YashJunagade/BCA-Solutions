@@ -1,0 +1,28 @@
+<!-- Write a simple PHP program which implements Ajax for Factorial of a numbers. -->
+
+<html>
+  <head>
+    <script type="text/javascript">
+      function display() {
+        let n = document.getElementById("n").value;
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+            document.getElementById("output").innerHTML = this.responseText;
+          }
+        };
+
+        xhr.open("GET", "factorial.php?n=" + n, true);
+        xhr.send();
+      }
+    </script>
+  </head>
+  <body>
+    <form name="f">
+      Enter Number :
+      <input type="number" name="n" id="n" onkeyup="display()" /><br /><br />
+      <!-- <input type="submit" onclick="display()" /> -->
+    </form>
+    <div id="output"></div>
+  </body>
+</html>

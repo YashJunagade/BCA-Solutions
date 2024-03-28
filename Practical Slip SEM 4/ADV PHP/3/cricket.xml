@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<CricketTeam>
+    <Team Country="Australia">
+        <player>Steve Smith</player>
+        <runs>7000</runs>
+        <wicket>20</wicket>
+    </Team>
+        <Team Country="India">
+        <player>Rohit Sharma</player>
+        <runs>2850</runs>
+        <wicket>5</wicket>
+    </Team>
+        <Team Country="England">
+        <player>Ben Stokes</player>
+        <runs>2650</runs>
+        <wicket>25</wicket>
+    </Team>
+        <Team Country="West indies">
+        <player>Dj Bravo</player>
+        <runs>9000</runs>
+        <wicket>225</wicket>
+    </Team>
+</CricketTeam>

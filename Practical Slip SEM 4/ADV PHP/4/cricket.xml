@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<cricketInfo>
+    <cricket>
+        <player>Sachin Tendulkar</player>
+        <runs>2000</runs>
+        <wickets>100</wickets>
+        <noofnotout>20</noofnotout>
+    </cricket>
+    <cricket>
+        <player>Rohit Sharma</player>
+        <runs>6000</runs>
+        <wickets>65</wickets>
+        <noofnotout>12</noofnotout>
+    </cricket>
+    <cricket>
+        <player>Virat Kolhi</player>
+        <runs>8500</runs>
+        <wickets>75</wickets>
+        <noofnotout>20</noofnotout>
+    </cricket>
+    <cricket>
+        <player>Shubham Gill</player>
+        <runs>1100</runs>
+        <wickets>100</wickets>
+        <noofnotout>20</noofnotout>
+    </cricket>
+    <cricket>
+        <player>MS Dhoni</player>
+        <runs>2000</runs>
+        <wickets>100</wickets>
+        <noofnotout>20</noofnotout>
+    </cricket>
+</cricketInfo>

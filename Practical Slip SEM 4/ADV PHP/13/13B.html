@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Voters Details</title>
+    <script>
+      function validateForm() {
+        name = votersForm.name.value;
+        age = votersForm.age.value;
+        nationality = votersForm.nationality.value;
+
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML = this.responseText;
+          }
+        };
+
+        xhr.open(
+          "GET",
+          "check.php?name=" +
+            name +
+            "&age=" +
+            age +
+            "&nationality=" +
+            nationality,
+          true
+        );
+        xhr.send();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Voters Details</h1>
+    <form name="votersForm">
+      Enter Name:
+      <input type="text" name="name" onkeyup="validateForm()" /><br /><br />
+      Enter Age:
+      <input type="number" name="age" onkeyup="validateForm()" /><br /><br />
+      Enter Nationality:
+      <input
+        type="text"
+        name="nationality"
+        onkeyup="validateForm()"
+      /><br /><br />
+    </form>
+    <div id="demo"></div>
+  </body>
+</html>

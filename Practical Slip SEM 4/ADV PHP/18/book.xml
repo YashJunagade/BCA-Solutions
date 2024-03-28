@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<bookstore>
+  <php>
+    <title>t1</title>
+    <publication>p1</publication>
+    <price>800</price>
+  </php>
+  <php>
+    <title>t2</title>
+    <publication>p2</publication>
+    <price>800</price>
+  </php>
+  <php>
+    <title>t3</title>
+    <publication>p1</publication>
+    <price>800</price>
+  </php>
+  <php>
+    <title>t4</title>
+    <publication>p2</publication>
+    <price>800</price>
+  </php>
+  <php>
+    <title>t5</title>
+    <publication>p1</publication>
+    <price>800</price>
+  </php>
+</bookstore>
