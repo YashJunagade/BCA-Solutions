@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<movies>
+	<category type="classical">
+		<name>Pren ratan dhan paayo</name>
+		<year>2015</year>
+		<actor>Salman Khan</actor>
+	</category>
+	<category type="Action">
+		<name>Jawan</name>
+		<year>2023</year>
+		<actor>Shah Rukh Khan</actor>
+	</category>
+	<category type="Horror">
+		<name>Zapatlela</name>
+		<year>2010</year>
+		<actor>Laxman</actor>
+	</category>
+</movies>

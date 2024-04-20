@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<books>
+	<book>
+		<code>1</code>	
+		<name>Book1</name>
+		<author>Author1</author>
+		<year>2004</year>
+		<price>200</price>
+	</book>
+	<book>
+		<code>2</code>	
+		<name>Book2</name>
+		<author>Author2</author>
+		<year>2005</year>
+		<price>250</price>
+	</book>
+	<book>
+		<code>3</code>	
+		<name>Book3</name>
+		<author>Author3</author>
+		<year>2006</year>
+		<price>300</price>
+	</book>
+</books>
