@@ -1,0 +1,65 @@
+#include<iostream.h>
+#include<conio.h>
+
+class MyMatrix{
+public :
+	int r, c;
+	int matrix[100][100];
+
+	MyMatrix(int row, int col){
+		r = row;
+		c = col;
+	}
+
+	void setMatrix(){
+		cout << "enter values for " << r << " X " << c << " matrix : " << endl;
+		for(int i=0; i<r; i++){
+			for(int j=0; j<c; j++){
+				cin >> matrix[i][j];
+			}
+		}
+	}
+
+	void displayMatrix(){
+		cout << "Matrix : " << endl;
+		for(int i=0; i<r; i++){
+			for(int j=0; j<c; j++){
+				cout << matrix[i][j] << " ";
+			}
+			cout << endl;
+		}
+	}
+
+	void operator-(MyMatrix &m2){
+		MyMatrix ans(r, c);
+
+		for(int i=0; i<r; i++){
+			for(int j=0; j<c; j++){
+				ans.matrix[i][j] = matrix[i][j] - m2.matrix[i][j];
+			}
+		}
+	}
+};
+
+int main(){
+	clrscr();
+	int row, col;
+	cout << "Enter Row and Col of Matrix 1 : ";
+	cin >> row >> col;
+	MyMatrix m1(row, col);
+	m1.setMatrix();
+
+	cout << "Enter Row and Col of Matrix 2 : ";
+	cin >> row >> col;
+	MyMatrix m2(row, col);
+	m2.setMatrix();
+
+	m1.displayMatrix();
+	m2.displayMatrix();
+
+	cout << "Subtraction of matrix 1 and matrix 2 : " << endl;
+	m1 - m2;
+
+	getch();
+	return 0;
+}

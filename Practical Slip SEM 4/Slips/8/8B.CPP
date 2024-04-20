@@ -1,0 +1,98 @@
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+
+class Person{
+public :
+	char name[100], city[100];
+	long long mno;
+	int age;
+
+	void setPerson(){
+		cout << "Enter Person Name : ";
+		cin >> name;
+		cout << "Enter Mobile No : ";
+		cin >> mno;
+		cout << "Enter Person Age : ";
+		cin >> age;
+		cout << "Enter City : ";
+		cin >> city;
+	}
+
+	void displayPerson(){
+		cout << "Person Name : " << name << endl;
+		cout << "Mobile No : " << mno << endl;
+		cout << "Age : " << age << endl;
+		cout << "City : " << city << endl;
+	}
+
+	void search(char *n){
+		if(strcmp(this->name, n) == 0){
+			cout << "Person Found " << endl;
+			displayPerson();
+		}
+		else{
+			cout << "Person Not Found " <<  endl;
+		}
+	}
+
+	void search(long long mn){
+		if(mn == mno){
+			cout << "Person Found " << endl;
+			displayPerson();
+		}
+		else{
+			cout << "Person Not Found " << endl;
+		}
+	}
+
+	void searchCity(char *c){
+		if(strcmp(city, c) == 0){
+			cout << "Person Found " << endl;
+			displayPerson();
+		}
+		else{
+			cout << "Person Not Found " << endl;
+		}
+	}
+};
+
+int main(){
+	clrscr();
+	Person p[10];
+	int n, i;
+	cout << "Enter Total No of Persons : ";
+	cin >> n;
+
+	for(i=0; i<n; i++){
+		cout << "Enter Person Details for " << i+1 << " : " << endl;
+		p[i].setPerson();
+	}
+
+	char pname[100], c[100];
+	long long mn;
+
+	cout << "Enter Person name to find thier mobile No : ";
+	cin >> pname;
+
+	for(i=0; i<n; i++){
+	       p[i].search(pname);
+	}
+
+	cout << "Enter Mobile No to search Person : ";
+	cin >> mn;
+
+	for(i=0; i<n; i++){
+		p[i].search(mn);
+	}
+
+
+	cout << "Enter City name to search Person : ";
+	cin >> c;
+	for(i=0; i<n; i++){
+		p[i].searchCity(c);
+	}
+
+	getch();
+	return 0;
+}
