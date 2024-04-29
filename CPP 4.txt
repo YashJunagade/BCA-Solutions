@@ -1,0 +1,2 @@
+1. Types of constructor
+	1.default 2.parameteried 3.copy

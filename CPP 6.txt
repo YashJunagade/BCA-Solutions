@@ -1,0 +1,42 @@
+1.This pointer:-
+1.is a special pointer that points to the current object instance
+2.allows to access data member and properties within the current object.
+3.this pointer help to solve ambiguity.
+4. example
+
+
+2.virtual function :- 
+1.it used to override the member function of the derived class.
+2.it declare with the member function of base class with keyword 'virtual'. 
+3.syntax
+4.example
+5.explanation
+
+
+3. pure virtual function :-
+1.is a virtual function that is declared in a base class but has no implementation in the base class. Instead, it is overrided in derived classes.
+2.the base class member function is declared with the 'virtual' keyword.
+3.syntax
+4.example
+5.explanation
+
+4. Pointer to object :-
+1.is a class pointer that hold the memory address of object
+2.it allows indirect access of object
+3. example
+4.explanation
+
+
+5. Early binding :- 
+1.It is also known as static binding or compile-time binding
+2.refers to the process of associating a function call with its corresponding function definition during compile time
+3. It used in a function overloading
+4. example
+5.explanation
+
+ 
+6. Late binding :-
+1.also known as dynamic binding or runtime binding
+2.refers to the process of associating a function call or variable reference with its corresponding implementation or value during runtime
+3.example 
+4. explanation

@@ -1,0 +1,9 @@
+What is class Template? Explain syntax of class template with suitable example.
+1.A class template in C++ is a blueprint for creating generic classes that can work with any data type
+2.syntax 
+template <class T>
+class ClassName {
+    // Class members and functions
+};
+3.template <class T>: This line declares a class template where T is a placeholder for the data type that will be specified when an object of the template class is created.
+4.ex

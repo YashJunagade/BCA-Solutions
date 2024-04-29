@@ -1,0 +1,2 @@
+Various file operations:
+1.open 2.close 3.read 4.write 5.append 6.copy 7.delete 8.rename

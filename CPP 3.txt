@@ -1,0 +1,31 @@
+1.Access Specifier
+1.define how the data member and properties get access from the outside of the class
+2.by default all data member and properties are private.
+2.types of access specifiers :-
+	1.private :- it accessable only within the class. it does not access from the outside of the class
+	2.protected :- it accessable only within class and derived class but not from the outside of the class
+	3.public :- data members and properties is accessable from the outside from the class
+3.syntax
+4.example
+
+
+2.static data members
+1.is a class-level variable that is shared among all instances (objects) of the clas
+2.static variable has same value amoung the all object of class
+3.declared with the 'static' keyword
+4.access with the scope resolution operator
+5.syntax
+6.example
+
+
+3.friend function and class
+1.it gives access of data member to function 
+2.declare with the 'friend' keyword.
+3.syntax
+4.example
+
+
+4.array object
+1.An object array is a collection of multiple objects of the same class stored in contiguous memory locations as elements of an array is stored.
+2.syntax
+3.example
