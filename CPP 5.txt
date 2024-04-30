@@ -1,6 +1,0 @@
-1.Virtual base class :-
-1.it serves as a common base for multiple derived classes in inheritance.
-2.It helps in avoiding multiple instances of the common base class in the derived classes
-3.diagram
-4.syntax
-5. example
