@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="styles.css"
+   type="text/css"?>
+<univInfo>
+    <univ>
+        <uname >SPPU</uname>
+        <city>Pune</city>
+        <rank>1</rank>
+    </univ>
+    <univ>
+        <uname>Sandip</uname>
+        <city>Nashik</city>
+        <rank>2</rank>
+    </univ>
+    <univ>
+        <uname>MET</uname>
+        <city>Nashik</city>
+        <rank>3</rank>
+    </univ>
+</univInfo>

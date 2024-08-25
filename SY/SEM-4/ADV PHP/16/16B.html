@@ -1,0 +1,27 @@
+<!-- Write Ajax program to carry out validation for a username entered in textbox. If the textbox is blank, print ‘Enter username’, 
+If the number of characters is less than three, print’ Username is too short’. If value entered is appropriate the print ‘Valid username’. -->
+
+<html>
+  <head>
+    <script type="text/javascript">
+      function display(username) {
+        let xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+            document.getElementById("output").innerHTML = this.responseText;
+          }
+        };
+        xhr.open("GET", "validation.php?name=" + username, true);
+        xhr.send();
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      Enter UserName :
+      <input type="text" name="username" onkeyup="display(this.value)" />
+    </form>
+    <div id="output"></div>
+  </body>
+</html>

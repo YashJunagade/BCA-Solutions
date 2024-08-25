@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<books>
+    <book>
+        <code>1</code>
+        <name>CPP</name>
+        <author>abc</author>
+        <year>2023</year>
+        <price>150</price>
+    </book>
+    <book>
+        <code>2</code>
+        <name>PHP</name>
+        <author>def</author>
+        <year>2022</year>
+        <price>180</price>
+    </book>
+    <book>
+        <code>3</code>
+        <name>OS</name>
+        <author>xyz</author>
+        <year>2024</year>
+        <price>200</price>
+    </book>
+</books>

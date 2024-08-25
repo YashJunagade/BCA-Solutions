@@ -1,0 +1,4 @@
+<!-- student.xml  -->
+
+<?xml version="1.0"?>
+<students><student><rollno>46</rollno><name>Yash</name><Address>Nashik</Address><College>KKW</College><course>BCA</course></student><student><rollno>46</rollno><name>Yash</name><Address>Nashik</Address><College>KKW</College><course>BCA</course></student><student><rollno>46</rollno><name>Yash</name><Address>Nashik</Address><College>KKW</College><course>BCA</course></student></students>
