@@ -1,8 +1,0 @@
-Movie Name : Dil
-Release Year : 2002
-Director Name : yash
-Budget : 100
-Movie Name : i
-Release Year : 2004
-Director Name : yash
-Budget : 99
