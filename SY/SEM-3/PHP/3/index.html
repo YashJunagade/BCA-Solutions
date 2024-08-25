@@ -1,0 +1,42 @@
+<!-- index.html  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <h3>Simple Calculator</h3>
+    <form action="3.php" method="GET">
+      <table>
+        <tr>
+          <td><h3>Enter first number:</h3></td>
+          <td><input type="text" name="no1" required /></td>
+        </tr>
+        <tr>
+          <td><h3>Enter second number:</h3></td>
+          <td><input type="text" name="no2" required /></td>
+        </tr>
+        <tr>
+          <td><b>Select the operation you want to perform:</b></td>
+        </tr>
+        <tr>
+          <td><input type="radio" value="1" name="cal" required />Addition</td>
+        </tr>
+        <tr>
+          <td><input type="radio" value="2" name="cal" />Subtraction</td>
+        </tr>
+        <tr>
+          <td><input type="radio" value="3" name="cal" />Multiplication</td>
+        </tr>
+        <tr>
+          <td><input type="radio" value="4" name="cal" />Division</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" name="submit" value="Calculate" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

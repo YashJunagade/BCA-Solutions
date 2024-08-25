@@ -1,0 +1,97 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Database Operations</title>
+  </head>
+  <body>
+    <h1>Movie Database Operations</h1>
+
+    <form action="movies.php" method="post">
+      <h3>Select an Operation:</h3>
+
+      <input
+        type="radio"
+        id="display_movies"
+        name="operation"
+        value="display_movies"
+      />
+      <label for="display_movies">Display Movies by Actor</label><br />
+
+      <input
+        type="radio"
+        id="insert_movie"
+        name="operation"
+        value="insert_movie"
+      />
+      <label for="insert_movie">Insert New Movie</label><br />
+
+      <input
+        type="radio"
+        id="update_movie"
+        name="operation"
+        value="update_movie"
+      />
+      <label for="update_movie">Update Release Year of Movie</label><br /><br />
+
+      <!-- Form fields for each operation -->
+      <div id="display_movies_form" style="display: none">
+        <label for="actor_name">Enter Actor Name:</label>
+        <input type="text" id="actor_name" name="actor_name" /><br /><br />
+      </div>
+
+      <div id="insert_movie_form" style="display: none">
+        <label for="movie_name">Enter Movie Name:</label>
+        <input type="text" id="movie_name" name="movie_name" /><br /><br />
+        <label for="release_year">Enter Release Year:</label>
+        <input
+          type="number"
+          id="release_year"
+          name="release_year"
+        /><br /><br />
+      </div>
+
+      <div id="update_movie_form" style="display: none">
+        <label for="movie_name_update">Enter Movie Name:</label>
+        <input
+          type="text"
+          id="movie_name_update"
+          name="movie_name"
+        /><br /><br />
+        <label for="new_release_year">Enter New Release Year:</label>
+        <input
+          type="number"
+          id="new_release_year"
+          name="new_release_year"
+        /><br /><br />
+      </div>
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      // JavaScript to handle form display based on selected operation
+      document.querySelectorAll('input[name="operation"]').forEach((radio) => {
+        radio.addEventListener("change", () => {
+          document.getElementById("display_movies_form").style.display = "none";
+          document.getElementById("insert_movie_form").style.display = "none";
+          document.getElementById("update_movie_form").style.display = "none";
+
+          if (radio.value === "display_movies") {
+            document.getElementById("display_movies_form").style.display =
+              "block";
+          } else if (radio.value === "insert_movie") {
+            document.getElementById("insert_movie_form").style.display =
+              "block";
+          } else if (radio.value === "update_movie") {
+            document.getElementById("update_movie_form").style.display =
+              "block";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
