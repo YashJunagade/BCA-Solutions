@@ -1,0 +1,8 @@
+Movie Name : rrr
+Director Name : raj
+Release Year : 2023
+Budget : 343
+Movie Name : kgf
+Director Name : yash
+Release Year : 2022
+Budget : 234
