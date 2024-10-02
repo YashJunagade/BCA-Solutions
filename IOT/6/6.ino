@@ -1,3 +1,5 @@
+//Demonstration of interfacing Switch and buzzer 
+
 int pushPin = 2;
 int buzzPin = 3;
 int pushValue;

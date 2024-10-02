@@ -1,3 +1,5 @@
+//Demonstration of LED Fade in and Fade out
+
 int ledPin = 9;
 int brightness = 0;
 int fadeAmount = 10;

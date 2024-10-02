@@ -1,3 +1,6 @@
+//Demonstration of Stepper motor
+
+
 int in1Pin = 8;
 int in2Pin = 9;
 int in3Pin = 10;

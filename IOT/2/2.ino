@@ -1,3 +1,5 @@
+//Demonstration of Temperature sensor
+
 #include<DHT.h>
 #define DHTTYPE DHT11
 

@@ -1,3 +1,5 @@
+//Demonstration of LED Blink
+
 int ledPin = 5;
 
 void setup()

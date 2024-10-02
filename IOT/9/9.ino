@@ -1,3 +1,5 @@
+//Demonstration of LDR Base light Controller system
+
 int potPin = A1;
 int potValue;
 

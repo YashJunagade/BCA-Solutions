@@ -1,3 +1,5 @@
+//Demonstration of LDR Base light Controller system
+
 int ldrPin = A0;
 int relayPin = 7;
 int threshold = 300;
