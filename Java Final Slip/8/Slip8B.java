@@ -15,7 +15,7 @@ class Slip8B {
         File directory = new File("../../");
         if (directory.isDirectory()) {
             File[] files = directory.listFiles();
-            new Slip8B().printTxtFile(files, 0);
+            printTxtFile(files, 0);
         }
     }
 }
